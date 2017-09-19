@@ -1,4 +1,5 @@
 **In**
+tagged template literal
 
 ```javascript
 return html`
@@ -12,6 +13,7 @@ return html`
 `↓ ↓ ↓ ↓ ↓ ↓`
 
 **Out**
+jsx
 
 ```javascript
 return (<div>
