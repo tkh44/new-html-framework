@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic 1`] = `
+"
+html\`
+  <div>
+    <h1>Hello</h1>
+  </div>
+\`;
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+<div>
+    <h1>Hello</h1>
+  </div>;
+"
+`;
+
+exports[`with expression 1`] = `
+"
+html\`
+  <div>
+    <h1>\${foo}</h1>
+  </div>
+\`;
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+<div>
+    <h1>{foo}</h1>
+  </div>;
+"
+`;
