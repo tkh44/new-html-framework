@@ -1,0 +1,53 @@
+{
+  "name": "new-framework",
+  "version": "0.0.1",
+  "description": "just learning",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard src",
+    "lint:fix": "standard --fix src",
+    "test": "jest --coverage --no-cache --ci --runInBand",
+    "test:watch": "jest --watch --no-cache"
+  },
+  "author": "Kye Hohenberger",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "standard",
+    "parser": "babel-eslint"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-tester": "^4.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "prettier": "^1.6.1",
+    "standard": "^10.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/tkh44/babel-plugin-sitrep/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkh44/babel-plugin-sitrep.git"
+  },
+  "keywords": [
+    "console",
+    "console.log",
+    "babel",
+    "plugin",
+    "babel-plugin-sitrep",
+    "babel log",
+    "logging",
+    "logger",
+    "log"
+  ],
+  "dependencies": {
+    "babel-generator": "^6.26.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-template": "^6.26.0"
+  }
+}
