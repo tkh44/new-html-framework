@@ -29,6 +29,17 @@ pluginTester({
           </div>
         \`;
       `
+    },
+    {
+      title: 'not html',
+      snapshot: false,
+      code: `
+        css\`
+          <div>
+            <h1>\${foo}</h1>
+          </div>
+        \`;
+      `
     }
   ]
 })

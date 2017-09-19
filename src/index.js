@@ -29,6 +29,10 @@ module.exports = function(babel) {
     inherits: require('babel-plugin-syntax-jsx'),
     visitor: {
       TaggedTemplateExpression(path) {
+        if (path.node.tag.name !== 'html') {
+          return
+        }
+
         let strs = path.node.quasi.quasis.map(
           x => x.value.cooked
         );
